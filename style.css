@@ -1,0 +1,48 @@
+:root {
+    --info: rgb(42, 212, 255);
+    --maroon: #53212b;
+    --white: #fffbf5;
+    --black: #010101;
+    --lilblack: #1b0000;
+    --gold: #ffd700;
+    --lightgrey: #dadada;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* navbar */
+.navbar-nav a:hover {
+    color: var(--info);
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid var(--gold);
+    transform: scaleX(0);
+    transition: 0.1s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.8);
+}
+
+.social {
+    background-color: #0a0a0a;
+}
+
+.bottom_navbar {
+    padding-bottom: 400rem;
+}
+
+.whatsapp {
+    z-index: 99999;
+}
